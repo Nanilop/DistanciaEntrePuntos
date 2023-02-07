@@ -80,6 +80,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Punto.vb" />
+    <Compile Include="Punto2D.vb" />
+    <Compile Include="Punto3D.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

@@ -55,6 +55,7 @@
             // 
             // btnCalcular
             // 
+            this.btnCalcular.Enabled = false;
             this.btnCalcular.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.Location = new System.Drawing.Point(330, 149);
             this.btnCalcular.Name = "btnCalcular";
@@ -121,7 +122,6 @@
             this.txtPunto2.Size = new System.Drawing.Size(100, 29);
             this.txtPunto2.TabIndex = 7;
             this.txtPunto2.TextChanged += new System.EventHandler(this.txtPunto2_TextChanged);
-            this.txtPunto2.TextChanged += new System.EventHandler(this.TextChange);
             // 
             // txtPunto1
             // 
@@ -131,7 +131,6 @@
             this.txtPunto1.Size = new System.Drawing.Size(100, 29);
             this.txtPunto1.TabIndex = 8;
             this.txtPunto1.TextChanged += new System.EventHandler(this.txtPunto1_TextChanged);
-            this.txtPunto1.TextChanged += new System.EventHandler(this.TextChange);
             // 
             // p1
             // 
@@ -140,9 +139,9 @@
             this.p1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.p1.Location = new System.Drawing.Point(315, 43);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(48, 21);
+            this.p1.Size = new System.Drawing.Size(63, 21);
             this.p1.TabIndex = 9;
-            this.p1.Text = "(0,0)";
+            this.p1.Text = "(0,0,0)";
             // 
             // p2
             // 
@@ -151,9 +150,9 @@
             this.p2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.p2.Location = new System.Drawing.Point(315, 80);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(48, 21);
+            this.p2.Size = new System.Drawing.Size(63, 21);
             this.p2.TabIndex = 10;
-            this.p2.Text = "(0,0)";
+            this.p2.Text = "(0,0,0)";
             // 
             // adver
             // 
@@ -161,9 +160,9 @@
             this.adver.ForeColor = System.Drawing.Color.Red;
             this.adver.Location = new System.Drawing.Point(93, 160);
             this.adver.Name = "adver";
-            this.adver.Size = new System.Drawing.Size(220, 13);
+            this.adver.Size = new System.Drawing.Size(228, 26);
             this.adver.TabIndex = 11;
-            this.adver.Text = "*Ingrese las coordenadas correctamente (x,y)";
+            this.adver.Text = "*Ingrese las coordenadas correctamente (x,y,z)\r\nSolo acepta enteros";
             this.adver.Visible = false;
             // 
             // Form1
@@ -184,7 +183,7 @@
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnLimpiar);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "C#";
             this.ResumeLayout(false);
             this.PerformLayout();
 

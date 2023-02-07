@@ -8,37 +8,28 @@ namespace PuntoC
 {
     public class Punto
     {
-        private int _x;
-        private int _y;
-
+        protected int _x;
         public int X
         {
             get { return _x; }
             set { _x = value; }
         }
-        public int Y
-        {
-            get { return _y; }
-            set { _y = value; }
-        }
-
         public Punto()
         {
             _x = 0;
-            _y = 0;
         }
 
-        public Punto(int x, int y)
+        public Punto(int x)
         {
             _x = x;
-            _y = y;
+        }
+        public override string ToString()
+        {
+            return "(" + _x + ")";
         }
         public double Distancia(Punto p)
         {
-            double resultado = 0;
-            double xp = (_x - p.X) * (_x - p.X);
-            double yp = (_y - p.Y)* (_y - p.Y);
-            resultado = Math.Sqrt(xp+yp);
+            double resultado = (_x - p.X);
             return resultado;
         }
     }

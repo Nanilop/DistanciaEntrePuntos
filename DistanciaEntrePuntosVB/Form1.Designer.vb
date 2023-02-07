@@ -38,6 +38,7 @@ Partial Class Form1
         '
         'btnCalcular
         '
+        Me.btnCalcular.Enabled = False
         Me.btnCalcular.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCalcular.Location = New System.Drawing.Point(331, 154)
         Me.btnCalcular.Name = "btnCalcular"
@@ -127,9 +128,9 @@ Partial Class Form1
         Me.adver.ForeColor = System.Drawing.Color.Red
         Me.adver.Location = New System.Drawing.Point(104, 163)
         Me.adver.Name = "adver"
-        Me.adver.Size = New System.Drawing.Size(220, 13)
+        Me.adver.Size = New System.Drawing.Size(228, 26)
         Me.adver.TabIndex = 9
-        Me.adver.Text = "*Ingrese las coordenadas correctamente (x,y)"
+        Me.adver.Text = "*Ingrese las coordenadas correctamente (x,y,z)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Solo acepta enteros"
         Me.adver.Visible = False
         '
         'p1
@@ -140,9 +141,9 @@ Partial Class Form1
         Me.p1.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.p1.Location = New System.Drawing.Point(314, 52)
         Me.p1.Name = "p1"
-        Me.p1.Size = New System.Drawing.Size(48, 21)
+        Me.p1.Size = New System.Drawing.Size(63, 21)
         Me.p1.TabIndex = 10
-        Me.p1.Text = "(0,0)"
+        Me.p1.Text = "(0,0,0)"
         '
         'p2
         '
@@ -152,9 +153,9 @@ Partial Class Form1
         Me.p2.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.p2.Location = New System.Drawing.Point(316, 86)
         Me.p2.Name = "p2"
-        Me.p2.Size = New System.Drawing.Size(48, 21)
+        Me.p2.Size = New System.Drawing.Size(63, 21)
         Me.p2.TabIndex = 11
-        Me.p2.Text = "(0,0)"
+        Me.p2.Text = "(0,0,0)"
         '
         'Form1
         '
@@ -174,7 +175,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.btnCalcular)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "VB"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

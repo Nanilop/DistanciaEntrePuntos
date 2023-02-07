@@ -1,17 +1,5 @@
 ﻿Public Class Punto
-    Private x1 As Integer
-
-    Private y1 As Integer
-
-    Public Sub New()
-        x1 = 0
-        y1 = 0
-    End Sub
-    Public Sub New(x As Integer, y As Integer)
-        x1 = x
-        y1 = y
-    End Sub
-
+    Protected x1 As Integer
     Public Property X() As Integer
         Get
             Return x1
@@ -21,22 +9,19 @@
             x1 = value
         End Set
     End Property
+    Public Sub New()
+        x1 = 0
 
-    Public Property Y() As Integer
-        Get
-            Return y1
-        End Get
+    End Sub
+    Public Sub New(x As Integer)
+        x1 = x
 
-        Set(ByVal value As Integer)
-            y1 = value
-        End Set
-    End Property
-
+    End Sub
     Public Function Distancia(p As Punto) As Double
-        Dim resultado As Double = 0
-        Dim xp = (x1 - p.X) * (x1 - p.X)
-        Dim yp = (y1 - p.Y) * (y1 - p.Y)
-        resultado = Math.Sqrt(xp + yp)
+        Dim resultado As Double = (x1 - p.X)
         Return resultado
+    End Function
+    Public Overrides Function ToString() As String
+        Return "(" + x1 + ")"
     End Function
 End Class
